@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class ApiKeyFilter extends OncePerRequestFilter {
 
     private static final String API_KEY_HEADER = "x-api-key";
-    private static final String VALID_API_KEY = "your-generated-api-key"; // Replace with your actual API key
+    private static final String VALID_API_KEY = "aLkljs9-szE8f93dMfD47N8lf93kKld98sl23lJ8"; // Replace with your actual API key
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
