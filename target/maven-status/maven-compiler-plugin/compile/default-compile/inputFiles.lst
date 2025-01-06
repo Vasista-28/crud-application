@@ -1,7 +1,5 @@
-/Users/vasista/Downloads/crud-application-1/src/main/java/com/example/crud_application/ApiKeyFilter.java
 /Users/vasista/Downloads/crud-application-1/src/main/java/com/example/crud_application/CorsConfig.java
 /Users/vasista/Downloads/crud-application-1/src/main/java/com/example/crud_application/CrudApplication.java
-/Users/vasista/Downloads/crud-application-1/src/main/java/com/example/crud_application/SecurityConfig.java
 /Users/vasista/Downloads/crud-application-1/src/main/java/com/example/crud_application/controller/ItemController.java
 /Users/vasista/Downloads/crud-application-1/src/main/java/com/example/crud_application/model/Item.java
 /Users/vasista/Downloads/crud-application-1/src/main/java/com/example/crud_application/repository/ItemRepository.java
