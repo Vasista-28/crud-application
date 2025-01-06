@@ -15,20 +15,20 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
+          distribution: 'microsoft'
           java-version: '17'
 
       - name: Build with Maven
         run: mvn clean package
 
       - name: Deploy to Azure App Service
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v3
         with:
           app-name: 'crud-application'
           publish-profile: ${{ secrets.AZURE_CREDENTIALS }}
           package: './target/*.jar'
-        env:
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        # env:
+        #   DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
 
 
           
