@@ -1,5 +1,7 @@
 com/example/crud_application/service/ItemService.class
 com/example/crud_application/controller/ItemController.class
+com/example/crud_application/CorsConfig.class
 com/example/crud_application/repository/ItemRepository.class
 com/example/crud_application/CrudApplication.class
 com/example/crud_application/model/Item.class
+com/example/crud_application/CorsConfig$1.class
