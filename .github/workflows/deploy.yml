@@ -25,6 +25,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'crud-application'
-          slot-name: 'production'
           publish-profile: ${{ secrets.AZURE_CREDENTIALS }}
           package: './target/*.jar'
