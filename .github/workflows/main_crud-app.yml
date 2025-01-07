@@ -51,6 +51,4 @@ jobs:
           app-name: 'crud-app'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E1CFA71747B4547AA483EBEF3FEC6F6 }}
-        env:
-          DB_CONNECTION_STRING: ${{ env.DB_CONNECTION_STRING }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BEFD29AD603F49F29B4E3C61A9A0E855 }}
