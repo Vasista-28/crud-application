@@ -1,1 +1,4 @@
+com/example/crud_application/controller/ItemControllerTest.class
+com/example/crud_application/repository/ItemRepositoryTest.class
+com/example/crud_application/service/ItemServiceTest.class
 com/example/crud_application/CrudApplicationTests.class
