@@ -15,9 +15,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Allow all paths
                         .allowedOrigins(
-                                "http://localhost:3000", 
-                                "https://ashy-dune-0ff59de0f.4.azurestaticapps.net/",
-                                "https://crud-admin-app-cffgenbzeyfbggf2.centralus-01.azurewebsites.net"
+                                "http://localhost:3000",
+                                "https://ashy-dune-0ff59de0f.4.azurestaticapps.net"
                         ) // Add both local and production URLs
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // HTTP methods allowed
                         .allowedHeaders("*") // Allow all headers
