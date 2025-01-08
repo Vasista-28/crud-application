@@ -14,7 +14,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Allow all paths
-                        .allowedOrigins("http://localhost:3000") // React app URL
+                        .allowedOrigins(
+                                "http://localhost:3000", 
+                                "https://crud-admin-app-cffgenbzeyfbggf2.centralus-01.azurewebsites.net"
+                        ) // Add both local and production URLs
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // HTTP methods allowed
                         .allowedHeaders("*") // Allow all headers
                         .allowCredentials(true); // Allow credentials like cookies
