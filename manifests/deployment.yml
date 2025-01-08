@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vasistacrudapplication 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vasistacrudapplication
+  template:
+    metadata:
+      labels:
+        app: vasistacrudapplication 
+    spec:
+      containers:
+        - name: vasistacrudapplication 
+          image: crudapplication.azurecr.io/vasistacrudapplication
+          ports:
+          - containerPort: 8080
