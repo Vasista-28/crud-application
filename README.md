@@ -20,10 +20,15 @@
 | `DELETE` | `/api/items/{id}`  | Delete an item by ID      |
 
 
-
 ## Deployment
 #### The backend is deployed on Azure App Service with automated CI/CD pipelines connected to the GitHub repository. Any changes pushed to the repository trigger an automatic build and deployment.
 
+## Technologies Used
+- Spring Boot
+- Java 17
+- Azure SQL Database
+- Azure App Service
+- GitHub Actions (for CI/CD)
 
 ## Setup
 1. Clone the repository:
