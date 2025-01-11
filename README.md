@@ -4,6 +4,17 @@
 ## Architecture
 ![Architecture Image](image.png)
 
+```mermaid
+graph LR;
+    Admin([Admin]) <-->|Request/Response| MFE[Frontend React Application]
+    User([User]) <-->|Request/Response| MFE
+    MFE <-->|API Calls| BFF[Backend Java Spring Boot Application]
+    BFF -->|CRUD Operations| AppService[Azure App Service]
+    AppService <--> |CRUD Operations| BFF
+    AppService --> SQLDB[Azure SQL DB]
+    SQLDB --> AppService
+```
+
 ## Features
 - CRUD Operations: Create, Read, Update, and Delete functionality for items.
 - Database Integration: Utilizes Azure SQL Database for persistent storage.
