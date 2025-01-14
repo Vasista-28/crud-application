@@ -59,3 +59,7 @@ graph LR;
     ```bash
     ./mvnw spring-boot:run
     ```
+
+#### Frontend Rpositories: 
+#### [USER]: https://github.com/Vasista-28/crud-user
+#### [ADMIN]: https://github.com/Vasista-28/crud-frontend-admin
