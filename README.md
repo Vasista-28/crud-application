@@ -2,7 +2,6 @@
 #### This repository contains the backend implementation of the CRUD application. It is developed using Spring Boot and follows the Backend-for-Frontend (BFF) architecture pattern. The backend provides RESTful APIs to support CRUD operations on items and integrates seamlessly with an Azure SQL database.
 
 ## Architecture
-![Architecture Image](image.png)
 
 ```mermaid
 graph LR;
