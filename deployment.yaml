@@ -1,0 +1,33 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crud-application-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: crud-application
+  template:
+    metadata:
+      labels:
+        app: crud-application
+    spec:
+      containers:
+      - name: crud-application
+        image: vasistatummala/crud-application:latest
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: crud-application-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: crud-application
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
